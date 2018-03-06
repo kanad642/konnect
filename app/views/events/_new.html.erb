@@ -11,34 +11,35 @@
       </ul>
     </div>
   <% end %>
+  <div class="calender_style" >
+    <div class="field">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
+    <div class="field">
+      <%= f.label :date_range %>
+      <%= f.datetime_select :date_range %>
+    </div>
 
-  <div class="field">
-    <%= f.label :date_range %>
-    <%= f.datetime_select :date_range %>
-  </div>
+    <div class="field">
+      <%= f.label :start %>
+      <%= f.datetime_select :start %>
+    </div>
 
-  <div class="field">
-    <%= f.label :start %>
-    <%= f.datetime_select :start %>
-  </div>
+    <div class="field">
+      <%= f.label :end %>
+      <%= f.datetime_select :end %>
+    </div>
 
-  <div class="field">
-    <%= f.label :end %>
-    <%= f.datetime_select :end %>
-  </div>
+    <div class="field">
+      <%= f.label :color %>
+      <%= f.text_area :color %>
+    </div>
 
-  <div class="field">
-    <%= f.label :color %>
-    <%= f.text_area :color %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
   </div>
 <% end %>
 </div>
