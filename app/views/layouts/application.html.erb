@@ -9,8 +9,7 @@
   </head>
 
   <body>
-    <!-- <div class="container"> -->
-    	<p class="navbar-text pull-right">
+    	<p class="navbar-text pull-right navbar-dark">
     		<% if user_signed_in? %>
     		  Logged in as <strong><%= current_user.email %></strong>.
     		  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
@@ -18,10 +17,10 @@
     		<% else %>
     		  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
     		  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> |
-          <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+          <%= link_to "Sign in with Facebook", "/users/auth/facebook", id: "sign_in" %> |
+          <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
     		<% end %>
   	  </p>
       <%= yield %>
-    <!-- </div> -->
   </body>
 </html>

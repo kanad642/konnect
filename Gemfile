@@ -38,6 +38,10 @@ gem 'haml', '~> 4.0.5'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+#
+gem 'omniauth'
+gem 'oauth2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

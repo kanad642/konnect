@@ -21,7 +21,7 @@
      display: block;
 }
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif; background-image: url(/assets/1.jpg); }
 
 /* The Modal (background) */
 .modal {
@@ -43,7 +43,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
 }
 
 /* The Close Button */
